@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Ola Stålberg
+ * @author Patrick Pedersen
  */
 public class Oblig_panel extends Application {
     
@@ -30,7 +30,11 @@ public class Oblig_panel extends Application {
         bifurcation.setText("Bifrucation");
         bifurcation.setContent(new Bifurcation());
         
-        tabPane.getTabs().addAll(mandelbrot, bifurcation);
+        Tab cellularautomaton = new Tab();
+        cellularautomaton.setText("Cellular Automaton");
+        cellularautomaton.setContent(new CellularAutomaton());
+        
+        tabPane.getTabs().addAll(mandelbrot, bifurcation, cellularautomaton);
         
         Scene scene = new Scene(tabPane, 600, 660);
         

@@ -18,7 +18,7 @@ import javafx.scene.paint.Color;
 
 /**
  *
- * @author Ola!
+ * @author Ola Stålberg
  */
 public class MandelBrot extends BorderPane {
 

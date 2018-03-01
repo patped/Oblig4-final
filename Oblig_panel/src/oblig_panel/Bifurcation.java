@@ -18,7 +18,7 @@ import javafx.scene.paint.Color;
 
 /**
  *
- * @author patrick
+ * @author Ola Stålberg
  */
 public class Bifurcation extends BorderPane {
 

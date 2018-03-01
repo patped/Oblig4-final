@@ -30,11 +30,15 @@ public class Oblig_panel extends Application {
         bifurcation.setText("Bifrucation");
         bifurcation.setContent(new Bifurcation());
         
-        Tab cellularautomaton = new Tab();
-        cellularautomaton.setText("Cellular Automaton");
-        cellularautomaton.setContent(new CellularAutomaton());
+        Tab cellularAutomaton = new Tab();
+        cellularAutomaton.setText("Cellular Automaton");
+        cellularAutomaton.setContent(new CellularAutomaton());
         
-        tabPane.getTabs().addAll(mandelbrot, bifurcation, cellularautomaton);
+        Tab gameOfLife = new Tab();
+        gameOfLife.setText("Game Of Life");
+        gameOfLife.setContent(new GameOfLife());
+        
+        tabPane.getTabs().addAll(mandelbrot, bifurcation, cellularAutomaton, gameOfLife);
         
         Scene scene = new Scene(tabPane, 600, 660);
         

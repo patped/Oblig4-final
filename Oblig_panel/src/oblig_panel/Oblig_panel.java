@@ -21,10 +21,16 @@ public class Oblig_panel extends Application {
     public void start(Stage primaryStage) {
         
         TabPane tabPane = new TabPane();
-        Tab tab = new Tab();
-        tab.setText("MandelBrot");
-        tab.setContent(new MandelBrot());
-        tabPane.getTabs().add(tab);
+        
+        Tab mandelbrot = new Tab();
+        mandelbrot.setText("MandelBrot");
+        mandelbrot.setContent(new MandelBrot());
+        
+        Tab bifurcation = new Tab();
+        bifurcation.setText("Bifrucation");
+        bifurcation.setContent(new Bifurcation());
+        
+        tabPane.getTabs().addAll(mandelbrot, bifurcation);
         
         Scene scene = new Scene(tabPane, 600, 660);
         
